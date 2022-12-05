@@ -46,76 +46,87 @@
 		</div>
 		<!--END HOME-->
 		
-		<!-- GALLERY -->
-		<section>
-			<div id="gallery">
-				<h2>FEATURED HOUSEPLANTS</h2>
+		<h2>FEATURED HOUSEPLANTS</h2>
+<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="images/plants/plant_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="images/plants/plant_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="images/plants/plant_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="images/plants/plant_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="images/plants/plant_5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+	  </div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 5</div>
+		<img src="images/plants/plant_1_large.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 5</div>
+		<img src="images/plants/plant_2_large.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 5</div>
+		<img src="images/plants/plant_3_large.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 5</div>
+		<img src="images/plants/plant_4_large.jpg" style="width:100%">
+	  </div>
 
-				<div>
-				
-				<!-- PHOTO-CONTAINER 1 -->
-				<div>
-					<img src="./images/plants/plant_1.jpg" alt="Green plant in green pot">
-						<div>
-							<h3>Zamioculcas Zamiifolio aka ZZ Plant</h3>
-							<p>$26</p>
-						</div>
-				</div>
-				<!--END OF PHOTO-CONTAINER 1 -->
-				
-				<!-- PHOTO-CONTAINER 2 -->
-				<div>
-					<img src="./images/plants/plant_2.jpg" alt="Green leafy plant in pink pot">
-						<div>
-							<h3>Philodendron Birkin</h3>
-							<p>$32</p>
-						</div>
-				</div>
-				<!--END OF PHOTO-CONTAINER 2 -->
-				
-				<!-- PHOTO-CONTAINER3 -->
-				<div>
-					<img src="./images/plants/plant_3.jpg" alt="Small vine in green pot">
-						<div>
-							<h3>String of Hearts</h3>
-							<p>$28</p>
-						</div>
-				</div>
-				<!--END OF PHOTO-CONTAINER 3 -->
-				
-				<!-- PHOTO-CONTAINER 4 -->
-				<div>
-					<img src="./images/plants/plant_4.jpg" alt="Tall green plant in green pot">
-						<div>
-							<h3>Snake Plant</h3>
-							<p>$24</p>
-						</div>
-				</div>
-				<!--END OF PHOTO-CONTAINER 4 -->
-				
-				<!-- PHOTO-CONTAINER 5 -->
-				<div>
-					<img src="./images/plants/plant_5.jpg" alt="Pink plant in pink pot">
-						<div>
-							<h3>Chinese Evergreen</h3>
-							<p>$24</p>
-						</div>
-				</div>
-				<!--END OF PHOTO-CONTAINER 5 -->
-				
-				<!-- PHOTO-CONTAINER 6 -->
-				<div>
-					<img src="./images/plants/plant_6.jpg" alt="Roung green plant in gray pot">
-						<div>
-							<h3>Pilea Peperomioides</h3>
-							<p>$26</p>
-						</div>
-				</div>
-				<!--END OF PHOTO-CONTAINER 6 -->
-				</div>
-			</div>
-		</section>
-		<!-- END GALLERY -->
+	  <div class="mySlides">
+		<div class="numbertext">5 / 5</div>
+		<img src="images/plants/plant_5_large.jpg" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="images/plants/plant_1.jpg" onclick="currentSlide(1)" alt="Zamioculas Zamiifolio">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="images/plants/plant_2.jpg" onclick="currentSlide(2)" alt="Philodendron Birkin">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="images/plants/plant_3.jpg" onclick="currentSlide(3)" alt="String of Hearts">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="images/plants/plant_4.jpg" onclick="currentSlide(4)" alt="Snake Plant">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="images/plants/plant_5.jpg" onclick="currentSlide(5)" alt="Chinese Evergreen">
+	  </div>
+	</div>
+  </div>
 		
 		<!-- WORKSHOPS -->
 		<section>
@@ -172,6 +183,8 @@
 			</div>
 		</section>
 		<!-- END OF CONTACT -->
+		<script src="JS/one_page_website.js"></script>
+	</body>
 		
 		<!-- FOOTER -->
 		<footer>
